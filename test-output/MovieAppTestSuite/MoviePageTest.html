@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>TestNG:  MoviePageTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>MoviePageTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 30 11:55:22 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>74 seconds (74723 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HomePageTest.contectSection()'><b>contectSection</b><br>Test class: HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>HomePageTest@306f16f3</td></tr>
+<tr>
+<td title='LoginPageTest.loginText()'><b>loginText</b><br>Test class: LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='HomePageTest.movieHeadingText()'><b>movieHeadingText</b><br>Test class: HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>HomePageTest@306f16f3</td></tr>
+<tr>
+<td title='LoginPageTest.emptyPassword()'><b>emptyPassword</b><br>Test class: LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='HomePageTest.movieSection()'><b>movieSection</b><br>Test class: HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>HomePageTest@306f16f3</td></tr>
+<tr>
+<td title='PopularPageTest.popularMoviesPage()'><b>popularMoviesPage</b><br>Test class: PopularPageTest</td>
+<td></td>
+<td>7</td>
+<td>PopularPageTest@22e357dc</td></tr>
+<tr>
+<td title='SearchPageTest.SearchFunctionality()'><b>SearchFunctionality</b><br>Test class: SearchPageTest</td>
+<td></td>
+<td>21</td>
+<td>SearchPageTest@49912c99</td></tr>
+<tr>
+<td title='MovieDetailsPageTest.popularPageClick()'><b>popularPageClick</b><br>Test class: MovieDetailsPageTest</td>
+<td></td>
+<td>6</td>
+<td>MovieDetailsPageTest@10163d6</td></tr>
+<tr>
+<td title='LoginPageTest.logoIsDisplayed()'><b>logoIsDisplayed</b><br>Test class: LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='HeaderSectionTest.navBarPopular()'><b>navBarPopular</b><br>Test class: HeaderSectionTest</td>
+<td></td>
+<td>0</td>
+<td>HeaderSectionTest@702b8b12</td></tr>
+<tr>
+<td title='HomePageTest.playButton()'><b>playButton</b><br>Test class: HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>HomePageTest@306f16f3</td></tr>
+<tr>
+<td title='LoginPageTest.usernameText()'><b>usernameText</b><br>Test class: LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='AccountPageTest.logoutFunctionality()'><b>logoutFunctionality</b><br>Test class: AccountPageTest</td>
+<td></td>
+<td>1</td>
+<td>AccountPageTest@2dde1bff</td></tr>
+<tr>
+<td title='AccountPageTest.accountPage()'><b>accountPage</b><br>Test class: AccountPageTest</td>
+<td></td>
+<td>2</td>
+<td>AccountPageTest@2dde1bff</td></tr>
+<tr>
+<td title='HeaderSectionTest.wibsiteLogo()'><b>wibsiteLogo</b><br>Test class: HeaderSectionTest</td>
+<td></td>
+<td>0</td>
+<td>HeaderSectionTest@702b8b12</td></tr>
+<tr>
+<td title='MovieDetailsPageTest.homePageClick()'><b>homePageClick</b><br>Test class: MovieDetailsPageTest</td>
+<td></td>
+<td>3</td>
+<td>MovieDetailsPageTest@10163d6</td></tr>
+<tr>
+<td title='LoginPageTest.invalidCredentials1()'><b>invalidCredentials1</b><br>Test class: LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='LoginPageTest.invalidCredentials2()'><b>invalidCredentials2</b><br>Test class: LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='HeaderSectionTest.navBarHome()'><b>navBarHome</b><br>Test class: HeaderSectionTest</td>
+<td></td>
+<td>0</td>
+<td>HeaderSectionTest@702b8b12</td></tr>
+<tr>
+<td title='LoginPageTest.passwordText()'><b>passwordText</b><br>Test class: LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='HeaderSectionTest.PopularSection()'><b>PopularSection</b><br>Test class: HeaderSectionTest</td>
+<td></td>
+<td>0</td>
+<td>HeaderSectionTest@702b8b12</td></tr>
+<tr>
+<td title='LoginPageTest.buttonText()'><b>buttonText</b><br>Test class: LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='LoginPageTest.validCredential()'><b>validCredential</b><br>Test class: LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='HeaderSectionTest.homeSection()'><b>homeSection</b><br>Test class: HeaderSectionTest</td>
+<td></td>
+<td>0</td>
+<td>HeaderSectionTest@702b8b12</td></tr>
+<tr>
+<td title='LoginPageTest.emptyInputField()'><b>emptyInputField</b><br>Test class: LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTest@29647f75</td></tr>
+<tr>
+<td title='HeaderSectionTest.accountSection()'><b>accountSection</b><br>Test class: HeaderSectionTest</td>
+<td></td>
+<td>0</td>
+<td>HeaderSectionTest@702b8b12</td></tr>
+<tr>
+<td title='LoginPageTest.emptyUsername()'><b>emptyUsername</b><br>Test class: LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTest@29647f75</td></tr>
+</table><p>
+</body>
+</html>
